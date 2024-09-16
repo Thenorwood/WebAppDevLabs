@@ -6,8 +6,6 @@ router.get('/', (req, res) => {
   res.send('Contacts route');
 });
 
-export default router;
-
 // Get all contacts
 router.get('/all', (req, res) => {
   res.send('All contacts');
@@ -30,5 +28,7 @@ router.put('/update', (req, res)=>{
 router.delete('/delete', (req, res)=>{
   res.send('delete contact')
 });
+
+export default router;
 
 // to-do: add post, put, and delete routers
